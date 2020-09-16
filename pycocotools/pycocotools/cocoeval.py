@@ -196,6 +196,13 @@ class COCOeval:
         ious = maskUtils.iou(d, g, iscrowd)
         return ious
 
+    def computeDIoU(self, imgId, catId):
+        # TODO: Implement DIoU loc quality.
+        raise NotImplementedError
+    def computeGIoU(self, imgId, catId):
+        # TODO: Implement GIoU loc quality.
+        raise NotImplementedError
+
     def computeOks(self, imgId, catId):
         p = self.params
         # dimention here should be Nxm
